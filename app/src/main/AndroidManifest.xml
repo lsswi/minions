@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FirstAND"
+        tools:targetApi="31">
+
+        <!-- 1. SecondActivity：普通页面，无需修改 -->
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" />
+
+        <!-- 2. FirstActivity：设置为入口页（关键修改） -->
+        <activity
+            android:name=".FirstActivity"
+            android:exported="true"
+        android:theme="@style/Theme.FirstAND">  <!-- 可选，继承应用主题 -->
+        <!-- 入口配置：移过来原来MainActivity中的intent-filter -->
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <!-- 3. MainActivity：移除入口配置，作为普通页面（或删除） -->
+    <activity
+        android:name=".MainActivity"
+        android:exported="false"
+    android:theme="@style/Theme.FirstAND" />
+</application>
+
+    </manifest>
