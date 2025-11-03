@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 
+// add comment
 class FirstActivity : AppCompatActivity() {
 
     // 声明控件（Kotlin无需findViewById，直接用ID引用，需启用viewBinding或插件）
