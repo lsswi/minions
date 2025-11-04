@@ -1,4 +1,4 @@
-package com.example.firstand
+package com.example.minions
 
 import org.junit.Test
 

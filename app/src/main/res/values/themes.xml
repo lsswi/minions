@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.FirstAND" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.minions" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.FirstAND" parent="Base.Theme.FirstAND" />
+    <style name="Theme.minions" parent="Base.Theme.minions" />
 </resources>

@@ -1,4 +1,4 @@
-package com.example.firstand
+package com.example.minions
 
 import android.annotation.SuppressLint
 import android.content.Intent

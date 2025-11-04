@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "FirstAND"
+rootProject.name = "minions"
 include(":app")
  

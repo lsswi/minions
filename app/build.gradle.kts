@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.firstand"
+    namespace = "com.example.minions"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.firstand"
+        applicationId = "com.example.minions"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
