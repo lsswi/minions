@@ -22,19 +22,19 @@
         <activity
             android:name=".FirstActivity"
             android:exported="true"
-        android:theme="@style/Theme.minions">  <!-- 可选，继承应用主题 -->
-        <!-- 入口配置：移过来原来MainActivity中的intent-filter -->
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
+            android:theme="@style/Theme.minions">  <!-- 可选，继承应用主题 -->
+            <!-- 入口配置：移过来原来MainActivity中的intent-filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
-    <!-- 3. MainActivity：移除入口配置，作为普通页面（或删除） -->
-    <activity
-        android:name=".MainActivity"
-        android:exported="false"
-    android:theme="@style/Theme.minions" />
-</application>
+        <!-- 3. MainActivity：移除入口配置，作为普通页面（或删除） -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.minions" />
+    </application>
 
-    </manifest>
+</manifest>
